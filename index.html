@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Generator password</title>
+
+    <!-- Icono -->
+    <link rel="icon" type="image/x-icon" href="./img/security.png">
+
+
+    <!-- Primary Meta Tags -->
+    <title>Generador de contraseñas online</title>
+    <meta name="title" content="Generador de contraseñas online" />
+    <meta name="description"
+        content="Genere sus contraseñas aleatorias de manera fácil que le permitirá que sus cuentas estén seguras." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://generadorpasswordx.netlify.app/" />
+    <meta property="og:title" content="Generador de contraseñas online" />
+    <meta property="og:description"
+        content="Genere sus contraseñas aleatorias de manera fácil que le permitirá que sus cuentas estén seguras." />
+    <meta property="og:image" content="https://i.imgur.com/pkaevfv.jpeg" />
+    <meta property="og:image:width" content="828" />
+    <meta property="og:image:height" content="450" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://generadorpasswordx.netlify.app/" />
+    <meta property="twitter:title" content="Generador de contraseñas online" />
+    <meta property="twitter:description"
+        content="Genere sus contraseñas aleatorias de manera fácil que le permitirá que sus cuentas estén seguras." />
+    <meta property="twitter:image" content="https://i.imgur.com/pkaevfv.jpeg" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <!-- Watshap -->
+    <meta property="og:title" content="Generador de contraseñas online" />
+    <meta property="og:url" content="https://generadorpasswordx.netlify.app/" />
+    <meta property="og:description" content="Genere sus contraseñas aleatorias de manera fácil que le permitirá que sus cuentas estén seguras.">
+    <meta property="og:image" itemprop="image" content="https://i.imgur.com/pkaevfv.jpeg"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_GB" />
+
+
+</head>
+
+
+<body>
+    <div class="contenedor">
+        <h3 class="title">Bienvenido al generador de contraseñas</h3>
+
+        <p class="subtitle"> Cree sus contraseñas aquí para mantener seguras sus cuentas</p>
+
+
+        <div class="contenedor-secundario">
+
+            <div class="contenedor-imagen">
+                <img src="./img/img-security.svg" class="img" alt="">
+            </div>
+
+            <div class="contenedor-generador">
+
+                <div class="password">
+                    <p id="password-generada">F&sOf</p>
+                    <button id="copiar-password" class="boton">Copiar</button>
+                    <p id="copiar" class="active">Copied!</p>
+                </div>
+
+                <div class="contenedor-longitud">
+                    <p class="subtitle-dos">Longitud de la contraseña:</p>
+                    <p id="longitud-password">8</p>
+                </div>
+
+                <div class="rango">
+                    <button id="disminuir-rango">-</button>
+                    <input type="range" id="longitud" min="1" max="25" step="1"
+                        onchange="mostrarCantidad(this.value)" />
+                    <button id="incrementar-rango">+</button>
+                </div>
+
+                <p class="subtitle-dos">Caracteres usados</p>
+
+                <div class="contenedor-caracteres">
+
+                    <div class="caracter">
+                        <input type="checkbox" id="mayusculas" class="check" />
+                        <label for="mayusculas">Mayusculas</label>
+                    </div>
+                    <div class="caracter">
+                        <input type="checkbox" id="minusculas" class="check" />
+                        <label for="minusculas">Minusculas</label>
+                    </div>
+                    <div class="caracter">
+                        <input type="checkbox" id="numeros" class="check" />
+                        <label for="numeros">Numeros</label>
+                    </div>
+                    <div class="caracter">
+                        <input type="checkbox" id="simbolos" class="check" />
+                        <label for="simbolos">Simbolos</label>
+                    </div>
+
+                </div>
+
+                <div id="error"></div>
+
+                <button id="boton-generar" class="boton boton-password">Genera contraseña</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright 2023 Generador de contraseñas</p>
+    </footer>
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
